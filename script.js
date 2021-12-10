@@ -12,6 +12,7 @@ const p500 = 5
 const txifood = parseFloat(1-0.155) 
 const tx99 = parseFloat(1-0.18)
 const txfs = parseFloat(1-0.15)
+const embalagem = 2
 
 const v150 = parseInt(document.querySelector('#q150').value)
 const v200 = parseInt(document.querySelector('#q200').value)
@@ -32,7 +33,7 @@ const t450 = parseFloat(p450*v450)
 const t500 = parseFloat(p500*v500)
 
 const qtotal = v150+v200+v250+v300+v350+v400+v450+v500
-const total = (t150+t200+t250+t300+t350+t400+t450+t500)
+const total = (t150+t200+t250+t300+t350+t400+t450+t500+embalagem)
 const ptotal = total.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
 const ifood = (total/txifood).toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
 const f99 = (total/tx99).toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
