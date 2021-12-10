@@ -90,4 +90,27 @@ input, li, R1{
 
 }
 
+@media (max-width:501px){
+    h1{
+        padding: 5px;
+    }
+    form{
+        width: 90vw;
+        margin: auto;
+        height: 90vh;
+    }
 
+    #fs, #f99, #ifood, #valorTotal{
+        border: none;
+    }
+
+    input, li, R1{
+
+        margin: 10px 0;
+    
+    }
+
+    li, R1{
+        top: 50%;
+    }
+}
