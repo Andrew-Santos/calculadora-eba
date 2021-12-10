@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular peças</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/material/64/000000/calculator--v1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Calcular peças</h1>
+
+    <form oninput="calcular()">
+       
+        <R1 id="p150">R$ 1,50</R1> <input type="number" min="0" id="q150" value="0"><br>
+        <R1 id="p200">R$ 2,00</R1> <input type="number" min="0" id="q200" value="0"><br>
+        <R1 id="p250">R$ 2,50</R1> <input type="number" min="0" id="q250" value="0"><br>
+        <R1 id="p300">R$ 3,00</R1> <input type="number" min="0" id="q300" value="0"><br>
+        <R1 id="p350">R$ 3,50</R1> <input type="number" min="0" id="q350" value="0"><br>
+        <R1 id="p400">R$ 4,00</R1> <input type="number" min="0" id="q400" value="0"><br>
+        <R1 id="p450">R$ 4,50</R1> <input type="number" min="0" id="q450" value="0"><br>
+        <R1 id="p500">R$ 5,00</R1> <input type="number" min="0" id="q500" value="0"><br><br>
+
+    
+
+
+        <li id="qt" class="qt">Quantidade:</li> <input type="text" name="quantidadeTotal" class="qt" id="quantidadeTotal" readonly>
+        <li class="vl">Valor:</li> <input type="text" name="valorTotal" class="vl" id="valorTotal" readonly>
+        <li class="if">Ifood:</li> <input type="text" name="ifood" class="if" id="ifood" readonly>
+        <li class="f99">99food:</li> <input type="text" name="f99" class="f99" id="f99" readonly>
+        <li class="fs">Fsdelivery:</li> <input type="text" name="fs" class="fs" id="fs" readonly>
+       
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
