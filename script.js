@@ -41,12 +41,19 @@ const fs = (total/txfs).toLocaleString('pt-BR', {style: 'currency', currency:'BR
 
 
 
-if(qtotal<=1){
+if(qtotal == '1'){
     document.querySelector('#quantidadeTotal').value = qtotal + ' Peça'
     
     
 
-}else{
+} if(qtotal == '0'){
+    document.querySelector('#quantidadeTotal').value = 'Null'
+
+}
+
+
+
+else{
     document.querySelector('#quantidadeTotal').value = qtotal + ' Peças'
     
 }
